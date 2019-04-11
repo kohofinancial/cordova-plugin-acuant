@@ -2,7 +2,7 @@ repositories{
   jcenter()
   maven { url 'http://maven.microblink.com' }
   flatDir{
-    dirs "libs"
+    dirs "src/main/libs"
    }
 }
 
@@ -12,7 +12,7 @@ dependencies {
     compile('com.microblink:pdf417.mobi:6.4.0@aar') {
         transitive = true
     }
-    compile 'com.android.support:appcompat-v7:26+'
+    compile 'com.android.support:appcompat-v7:27+'
     compile 'com.squareup.okhttp3:okhttp:3.8.0'
     compile 'com.google.code.gson:gson:2.8.0'
     compile ('org.jmrtd:jmrtd:0.5.6'){
@@ -52,7 +52,7 @@ configurations.all {
         def requested = details.requested
         if (requested.group == 'com.android.support') {
             if (!requested.name.startsWith("multidex")) {
-                details.useVersion '26+'
+                details.useVersion '27+'
             }
         }
     }
