@@ -65,7 +65,6 @@
     <source-file src="src/android/res/hold_steady.xml" target-dir="res/layout" />
     <source-file src="src/android/res/align_and_tap.xml" target-dir="res/layout" />
     <source-file src="src/android/res/tap_to_focus.xml" target-dir="res/layout" />
-    <source-file src="src/android/raw/device_list.json" target-dir="res/raw" />
     <source-file src="src/android/com/acuant/plugin/AcuantMobileSDK.java" target-dir="src/com/cssn/plugin/"/>
   
   </platform>
