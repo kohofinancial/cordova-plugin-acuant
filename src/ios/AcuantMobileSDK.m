@@ -1068,6 +1068,10 @@ Use this method to check if the SDK is already validated with the license key
 #pragma mark - Facial Methods
 
 -(void)showFacialInterface:(CDVInvokedUrlCommand*)command{
+    _methodId = @"showFacialInterface";
+    _callbackId = [command callbackId];
+    _callbackIdImageProcess = [command callbackId];
+
     UIViewController *rootViewController = [[[[UIApplication sharedApplication] delegate] window] rootViewController];
     NSMutableAttributedString* instStr = [[NSMutableAttributedString alloc] initWithString:_facialInstructionString];
     if(_facialInstructionFontSize!=nil){

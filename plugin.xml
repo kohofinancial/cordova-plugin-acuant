@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android"
-        id="com.acuant.plugin.AcuantMobileSDK"
+        id="cordova-plugin-acuant"
         version="2.7.0">
 
   <name>AcuantMobileSDK</name>
@@ -25,7 +25,7 @@
       </feature>
     </config-file>
 
-    <config-file target="AndroidManifest.xml" parent="/manifest">
+    <config-file target="app/src/main/AndroidManifest.xml" parent="/manifest">
         <uses-permission android:name="android.permission.NFC" />
         <uses-permission android:name="android.permission.CAMERA" />
         <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -41,7 +41,7 @@
       <uses-feature android:name="android.hardware.camera.flash" android:required="false" />
     </config-file>
 
-    <config-file target="AndroidManifest.xml" parent="/manifest/application">
+    <config-file target="app/src/main/AndroidManifest.xml" parent="/manifest/application">
       <activity
               android:name="com.acuant.mobilesdk.detect.Camera2CardDetectManual">
       </activity>
@@ -65,7 +65,6 @@
     <source-file src="src/android/res/hold_steady.xml" target-dir="res/layout" />
     <source-file src="src/android/res/align_and_tap.xml" target-dir="res/layout" />
     <source-file src="src/android/res/tap_to_focus.xml" target-dir="res/layout" />
-    <source-file src="src/android/raw/device_list.json" target-dir="res/raw" />
     <source-file src="src/android/com/acuant/plugin/AcuantMobileSDK.java" target-dir="src/com/cssn/plugin/"/>
   
   </platform>
@@ -105,15 +104,4 @@
     <resource-file src="src/ios/libs/AcuantMobileSDK.embeddedframework/Resources/MicroBlink.bundle"/>
  
   </platform>
-
-  <!-- windows -->
-  <platform name="windows">
-	<!-- ARM based CPU-->
-    	<framework src="src/windows/ARM/AcuantWindowsMobileSDKWinRTComponent.winmd" custom="true"/>
-	<framework src="src/windows/ARM/zcard.winmd" custom="true"/>
-	<!-- x64 based CPU-->
-	<!--framework src="src/windows/x64/AcuantWindowsMobileSDKWinRTComponent.winmd" custom="true"/-->
-	<!--framework src="src/windows/x64/zcard.winmd" custom="true"/-->
-   </platform>
-
 </plugin>

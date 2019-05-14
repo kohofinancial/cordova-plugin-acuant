@@ -1,5 +1,5 @@
 {
-  "name": "com.acuant.plugin.acuantmobilesdk",
+  "name": "cordova-plugin-acuant",
   "version": "2.7.0",
   "description": "Acuant Hybrid Mobile SDK",
   "main": "index.js",
@@ -10,13 +10,13 @@
   "license": "SEE LICENSE IN LICENSE.txt",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Acuant/AcuantHybridMobileSDK.git"
+    "url": "git+https://github.com/kohofinancial/cordova-plugin-acuant.git"
   },
   "keywords": [
     "AcuantMobileSDK"
   ],
   "bugs": {
-    "url": "https://github.com/Acuant/AcuantHybridMobileSDK/issues"
+    "url": "https://github.com/kohofinancial/cordova-plugin-acuant/issues"
   },
-  "homepage": "https://github.com/Acuant/AcuantHybridMobileSDK#readme"
+  "homepage": "https://github.com/kohofinancial/cordova-plugin-acuant#readme"
 }
