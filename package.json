@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-acuant",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "description": "Acuant Hybrid Mobile SDK",
   "main": "index.js",
   "scripts": {
